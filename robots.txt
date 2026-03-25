@@ -1,0 +1,9 @@
+# robots.txt — Consulting Agency SIA
+User-agent: *
+Allow: /
+
+# Block access to any future admin or draft folders
+Disallow: /admin/
+Disallow: /drafts/
+
+Sitemap: https://consulting.lv/sitemap.xml
