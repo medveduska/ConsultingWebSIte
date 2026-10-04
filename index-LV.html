@@ -40,9 +40,6 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- === Fonti === -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- === JSON-LD: strukturētie dati Google (LocalBusiness + LegalService) === -->
@@ -99,14 +96,6 @@
   }
   </script>
 
-  <!-- Google Analytics — TODO: nomainiet uz GA4 (G-XXXXXXXXXX) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121857304-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-121857304-1');
-  </script>
 </head>
 <body>
 
@@ -449,9 +438,13 @@
             </a>
           </div>
 
-          <div class="contact-map">
+          <div class="contact-map consent-required">
+            <div class="map-placeholder">
+              <p>Google karte tiek ielādēta tikai ar jūsu piekrišanu.</p>
+              <button type="button" class="btn-map-consent">Atļaut un parādīt karti</button>
+            </div>
             <iframe
-              src="https://www.google.com/maps/embed/v1/place?q=111a%20Stacijas%20iela%2C%20Daugavpils%2C%20Daugavpils%20pils%C4%93ta%2C%20Latvijas%20Republika&key=AIzaSyC8jxQRJgV495TNDoHPRyB67vsFvUe_HB4"
+              data-consent-src="https://www.google.com/maps/embed/v1/place?q=111a%20Stacijas%20iela%2C%20Daugavpils%2C%20Daugavpils%20pils%C4%93ta%2C%20Latvijas%20Republika&key=AIzaSyC8jxQRJgV495TNDoHPRyB67vsFvUe_HB4"
               title="Consulting Agency biroja atrašanās vieta Daugavpilī"
               allowfullscreen
               loading="lazy"
@@ -474,11 +467,14 @@
           <a href="#services">Pakalpojumi</a>
           <a href="#articles">Piezīmes</a>
           <a href="#contacts">Kontakti</a>
+          <a href="privacy-LV.html">Privātums</a>
+          <button type="button" class="cookie-settings">Sīkdatņu iestatījumi</button>
         </nav>
       </div>
     </div>
   </footer>
 
   <script src="articles.js"></script>
+  <script src="consent.js"></script>
 </body>
 </html>

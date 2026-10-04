@@ -29,4 +29,20 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://consulting.lv/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://consulting.lv/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://consulting.lv/privacy-LV.html"/>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://consulting.lv/privacy-LV.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://consulting.lv/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://consulting.lv/privacy-LV.html"/>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
